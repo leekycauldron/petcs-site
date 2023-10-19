@@ -1,19 +1,19 @@
 const btn = document.getElementById("menu-btn");
 const menu = document.getElementById("menu");
-
+const showMoreButton = document.querySelectorAll('.showMoreButton');
 const teamData = [
-    {name:"Bryson Lee-Kwen", title:"President"},
-    {name:"Michael Chen", title:"Vice President"},
-    {name:"Mekaeel Malik", title:"Vice President"},
-    {name:"Martin Baldwin", title:"Developer"},
-    {name:"Jeff Guo", title:"Beginner Class - Presenter"},
-    {name:"Thomas Jiang", title:"Intermediate Class - Presenter"},
-    {name:"Stephen Liu", title:"Beginner Class - Presenter"},
-    {name:"Yuvia Liu", title:"Beginner Class - Presenter"},
-    {name:"Jonathan Lok", title:"Developer"},
-    {name:"Evan Ma", title:"Developer"},
-    {name:"Sana Pardiwala", title:"Beginner Class - Presenter"},
-    {name:"Dorsa Rohani", title:"Developer"},
+    {name:"Bryson Lee-Kwen", title:"President", image:"bryson"},
+    {name:"Michael Chen", title:"Vice President", image:"michael"},
+    {name:"Mekaeel Malik", title:"Vice President", image:"mekaeel"},
+    {name:"Martin Baldwin", title:"Developer", image:"martin"},
+    {name:"Jeff Guo", title:"Beginner Class - Presenter", image:"jeff"},
+    {name:"Thomas Jiang", title:"Intermediate Class - Presenter", image:"thomas"},
+    {name:"Stephen Liu", title:"Beginner Class - Presenter", image:"stephen"},
+    {name:"Yuvia Liu", title:"Beginner Class - Presenter", image:"yuvia"},
+    {name:"Jonathan Lok", title:"Developer", image:"jonathan"},
+    {name:"Evan Ma", title:"Developer", image:"evan"},
+    {name:"Sana Pardiwala", title:"Beginner Class - Presenter", image:"sana"},
+    {name:"Dorsa Rohani", title:"Developer", image:"dorsa"},
 ]
 
 function createTeamMemberCards() {
@@ -24,10 +24,13 @@ function createTeamMemberCards() {
         const clone = templateCard.cloneNode(true);
         const nameElement = clone.querySelector('h2');
         const titleElement = clone.querySelector('p');
+        const imageElement = clone.querySelector('img');
 
         // Set name and title for the new card
+
         nameElement.textContent = member.name;
         titleElement.textContent = member.title;
+        imageElement.src = "images/"+member.image+".png";
 
         // Make the cloned card visible and append it to the container
         clone.classList.remove('hidden');
@@ -35,10 +38,33 @@ function createTeamMemberCards() {
     });
 }
 
+function hideAdditionalCards() {
+    const cards = document.querySelectorAll('.team-member-card');
+    for (let i = 3; i < cards.length; i++) {
+        cards[i].style.display = 'none';
+    }
+}
+
+// Function to show all cards
+function showAllCards() {
+    const cards = document.querySelectorAll('.team-member-card');
+    cards.forEach(card => {
+        card.style.display = 'block';
+    });
+}
+
 createTeamMemberCards();
+hideAdditionalCards();
 
 btn.addEventListener("click", () => {
     btn.classList.toggle("open");
     menu.classList.toggle("active");
 });
 
+
+showMoreButton.forEach((button, i) => {
+    button.addEventListener('click', () => {
+        showAllCards();
+        button.style.display = 'none';
+    });
+});
