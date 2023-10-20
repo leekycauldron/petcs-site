@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
+    <title>PETCS Club - About</title>
+</head>
+<body class="bg-black">
+    <div id="main" class="p-4 container mx-auto">
+        <nav class="relative container mx-auto mt-5 pl-5 pr-5 rounded-lg">
+            <div class="flex items-center justify-between">
+                <div class="pt-2">
+                    <a href="/"><img src="/images/PETCS_CLEAR.png" class="h-20"alt=""></a>
+                </div>
+
+                <div class="hidden md:flex space-x-6 text-white font-bold">
+                    <a href="/">Home</a>
+                    <a href="/about.html">About</a>
+                    <a href="/team.html">Team</a>
+                    <a href="/resources.html">Resources</a>
+                </div>
+
+                <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+            </div>
+
+            <div class="md:hidden">
+                <div id="menu" class="absolute flex flex-col items-center self-end bg-gray-900 text-white py-8 mt-10 space-y-6 font-bold sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                    <a href="/">Home</a>
+                    <a href="/about.html">About</a>
+                    <a href="/team.html">Team</a>
+                    <a href="/resources.html">Resources</a>
+                </div>
+            </div>
+        </nav>
+
+        <h1 class="text-white text-bold text-8xl text-center mt-4">About</h1>
+        <p class="text-center text-white m-20 text-xl">The Pierre Elliott Trudeau High School Club (PETCS Club) is a group of students with a passion for computer science. Every friday after-school we meet to discuss several computer science topics ranging from AI to Competitive programming!
+        <br><br>
+        Whether you are a complete beginner or an experienced programmer, we have something for everyone! Our club splits into two classes: one for beginners and one for more experienced programmers. 
+        </p>
+
+        <h2 class="text-white text-bold text-6xl text-center">Past Meetings</h2>
+        <br>
+        <table class="border border-white w-full text-white">
+            <thead>
+                <tr>
+                    <th class="bg-gray-900 px-4 py-2">Meeting Name</th>
+                    <th class="bg-gray-900 px-4 py-2">Description</th>
+                    <th class="bg-gray-900 px-4 py-2">Date</th>
+                    <th class="bg-gray-900 px-4 py-2">Difficulty</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="border border-white px-4 py-2">Intro Meeting</td>
+                    <td class="border border-white px-4 py-2">First meeting of the year to go over year plan and introduce execs.</td>
+                    <td class="border border-white px-4 py-2">2023-09-15</td>
+                    <td class="border border-white px-4 py-2"></td>
+                </tr>
+                <tr>
+                    <td class="border border-white px-4 py-2">Intro to Web Dev</td>
+                    <td class="border border-white px-4 py-2">Introduce basic HTML/CSS and web design. Created a simple portfolio website.</td>
+                    <td class="border border-white px-4 py-2">2023-09-29</td>
+                    <td class="border border-white px-4 py-2">Intermediate</td>
+                </tr>
+                <tr>
+                    <td class="border border-white px-4 py-2">Intro to Programming</td>
+                    <td class="border border-white px-4 py-2">An introduction to programming and different programming languages.</td>
+                    <td class="border border-white px-4 py-2">2023-09-29</td>
+                    <td class="border border-white px-4 py-2">Beginner</td>
+                </tr>
+                <tr>
+                    <td class="border border-white px-4 py-2">Intro to Python</td>
+                    <td class="border border-white px-4 py-2">An introduction to python programming (syntax, logic, basic I/O, variables)</td>
+                    <td class="border border-white px-4 py-2">2023-10-06</td>
+                    <td class="border border-white px-4 py-2">Beginner</td>
+                </tr>
+                <tr>
+                    <td class="border border-white px-4 py-2">Intro to Competitive Programming</td>
+                    <td class="border border-white px-4 py-2">An introduction to competitive programming, what it is, and a common website used for practice (dmoj.ca)</td>
+                    <td class="border border-white px-4 py-2">2023-10-06</td>
+                    <td class="border border-white px-4 py-2">Intermediate</td>
+                </tr>
+                <tr class="bg-white">
+                    <td class="border border-black text-black px-4 py-2">Alumni Panel (with SHSM)</td>
+                    <td class="border border-black text-black px-4 py-2">A joint event with SHSM where post-secondary students came to PET to talk about their uni experience and answer any questions that students may have about their future.</td>
+                    <td class="border border-black text-black px-4 py-2">2023-10-13</td>
+                    <td class="border border-black text-black px-4 py-2"></td>
+                </tr>
+
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+
+        <h2 class="text-white text-bold text-6xl mt-4 text-center">Which class is for me?</h2>
+        <p class="text-center text-white m-20 text-xl">Simply try it for yourself! You are free to walk in and out of any classroom that you wish. If beginner is too easy, move to intermediate. If Intermediate is too hard, come join the beginner class!
+        <br><br>
+        Here is a description of what both classes are like:
+        </p>
+        <h2 id="beginner" class="text-white text-bold text-6xl text-center mt-4">Beginner</h2>
+        <p class="text-center text-white m-14 text-xl">For those who know NOTHING about computer science or who want to brush up on basic skills. Here we will have a lot of fun casually learning about computer science through fun projects, contests and lessons. We meet in room 220!</p>  
+        <h2 id="intermediate" class="text-white text-bold text-6xl text-center mt-4">Intermediate</h2>
+        <p class="text-center text-white m-14 text-xl">Join the intermediate class as we explore computer science in more depth. We branch off into different fields such as web development, AI, game development and anything related to computer science! We recommend you have done some coding before (ICS3U is a good pre-requisite but NOT required). We meet in room 223!</p>
+    </div>
+
+    <footer class="bg-gray-900 w-auto text-white p-4 mt-5">
+        <div class="flex flex-wrap items-center justify-between">
+            <div class="w-full md:w-1/4">
+                <img src="images/PETCS_CLEAR.png" alt="Logo" class="h-20">
+            </div>
+            <div class="w-full flex md:w-1/4 mt-4 md:mt-0 text-right">
+                <a href="https://www.instagram.com/petcsclub/" target"_blank" class="mx-2">
+                    <img src="images/instagram.png" alt="Link 1" class="h-6 w-6">
+                </a>
+                <a href="https://discord.gg/J6HFNtgaSp" class="mx-2">
+                    <img src="images/discord.png" alt="Link 2" class="h-6 w-6">
+                </a>
+                <a href="https://classroom.google.com/c/NDQwMTUwMzc5MTBa?cjc=banxvgz" class="mx-2">
+                    <img src="images/class.png" alt="Link 3" class="h-6 w-6">
+                </a>
+            </div>
+            <div class="w-full md:w-1/4 mt-4 md:mt-0">
+                <a href="mailto:petcsclub1@gmail.com">petcsclub1@gmail.com</a>
+            </div>
+            <div class="w-full md:w-1/4 mt-4 md:mt-0 text-right">
+                &copy; 2023 PETCS Club. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
+    <title>PETCS Club - Team</title>
+</head>
+<body class="bg-black">
+    <div id="main" class="p-4">
+        <nav class="relative container mx-auto mt-5 pl-5 pr-5 rounded-lg">
+            <div class="flex items-center justify-between">
+                <div class="pt-2">
+                    <a href="/"><img src="/images/PETCS_CLEAR.png" class="h-20"alt=""></a>
+                </div>
+
+                <div class="hidden md:flex space-x-6 text-white font-bold">
+                    <a href="/">Home</a>
+                    <a href="/about.html">About</a>
+                    <a href="/team.html">Team</a>
+                    <a href="/resources.html">Resources</a>
+                </div>
+
+                <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+            </div>
+
+            <div class="md:hidden">
+                <div id="menu" class="absolute flex flex-col items-center self-end bg-gray-900 text-white py-8 mt-10 space-y-6 font-bold sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                    <a href="/">Home</a>
+                    <a href="/about.html">About</a>
+                    <a href="/team.html">Team</a>
+                    <a href="/resources.html">Resources</a>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="container mx-auto flex flex-col">
+            <h2 class="text-white text-6xl md:text-7xl text-center font-bold mt-4">Team</h2>
+            <br>
+            <div class="flex flex-col">
+                <p class="text-white text-center text-xl"><br>The PETCS Club exec team is comprised of a group of passionate individuals in the field of computer science. <br><br>
+                Feel free to reach out to any of us if you have any questions!
+                </p>
+                <br>
+            </div>
+            <div class="flex flex-col justify-center md:flex-row md:flex-wrap" id="teamContainer">
+                
+            </div>
+
+        </div>
+    </div>
+    
+
+    <!--HIDDEN RESUABLES-->
+    <div class="hidden">
+        <div class="max-w-md mx-auto bg-gray-900 rounded-lg shadow-lg overflow-hidden">
+            <img class="w-50 h-50 object-cover object-center" src="/images/logo.png" alt="Card Image">
+            <div class="p-6">
+                <h2 class="text-xl font-bold text-white">Card Title</h2>
+                <p class="mt-2 text-white">This is the card's description or content. You can customize it as needed.</p>
+            </div>
+        </div>
+        
+        <div class="p-4 md:w-auto team-member-card">
+            <div class="bg-gray-900 rounded-lg shadow-lg overflow-hidden">
+                <div class="p-4">
+                    <img src="/images/logo.png" alt="Team Member 1" class="w-60 h-60 rounded-full mx-auto">
+                    <h2 class="text-lg font-semibold text-white text-center mt-2">John Doe</h2>
+                    <p class="text-white text-center mt-2">Web Developer</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <footer class="bg-gray-900 w-auto text-white p-4 mt-5">
+        <div class="flex flex-wrap items-center justify-between">
+            <div class="w-full md:w-1/4">
+                <img src="images/PETCS_CLEAR.png" alt="Logo" class="h-20">
+            </div>
+            <div class="w-full flex md:w-1/4 mt-4 md:mt-0 text-right">
+                <a href="https://www.instagram.com/petcsclub/" target"_blank" class="mx-2">
+                    <img src="images/instagram.png" alt="Link 1" class="h-6 w-6">
+                </a>
+                <a href="https://discord.gg/J6HFNtgaSp" class="mx-2">
+                    <img src="images/discord.png" alt="Link 2" class="h-6 w-6">
+                </a>
+                <a href="https://classroom.google.com/c/NDQwMTUwMzc5MTBa?cjc=banxvgz" class="mx-2">
+                    <img src="images/class.png" alt="Link 3" class="h-6 w-6">
+                </a>
+            </div>
+            <div class="w-full md:w-1/4 mt-4 md:mt-0">
+                <a href="mailto:petcsclub1@gmail.com">petcsclub1@gmail.com</a>
+            </div>
+            <div class="w-full md:w-1/4 mt-4 md:mt-0 text-right">
+                &copy; 2023 PETCS Club. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/team.js"></script>
+</body>
+</html>
