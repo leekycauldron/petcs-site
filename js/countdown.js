@@ -22,3 +22,21 @@ updateCountdown();
 
 // Update the countdown every second
 setInterval(updateCountdown, 1000);
+
+
+const targetDate2 = new Date(2023, 1, 7, 23, 0, 0);
+
+function updateContent() {
+    const now = new Date();
+
+    // Check if the target date and time have passed
+    if (now >= targetDate) {
+        // Redirect to a new URL when the target date has passed
+        window.location.href = "/escape/start.html";
+    } else {
+        console.log("Countdown not yet expired")
+    }
+}
+
+// Initial call to check and update content
+updateContent();
