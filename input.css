@@ -70,3 +70,7 @@ nav a:hover {
     transform: translateY(6px) translateX(6px) rotate(-45deg);
 }
 
+#countdown {
+    font-size: 36px;
+    font-weight: bold;
+}
