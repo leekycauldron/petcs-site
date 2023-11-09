@@ -9,8 +9,8 @@ function updateCountdown() {
     const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
-    const countdownElement = document.getElementById('countdown');
-    countdownElement.innerHTML = `${days} Days : ${hours} Hours : ${minutes} Minutes : ${seconds} Seconds`;
+    const countdownElement = document.getElementsByClassName('countdown')[0];
+    countdownElement.innerHTML = `${days > 9 ? days : "0"+days} : ${hours > 9 ? hours : "0"+hours }  : ${minutes > 9 ? minutes : "0"+minutes}  : ${seconds > 9 ? seconds : "0"+seconds} `;
 
     if (timeLeft <= 0) {
         countdownElement.innerHTML = "Countdown Expired";
@@ -22,21 +22,3 @@ updateCountdown();
 
 // Update the countdown every second
 setInterval(updateCountdown, 1000);
-
-
-const targetDate2 = new Date(2023, 1, 7, 23, 0, 0);
-
-function updateContent() {
-    const now = new Date();
-
-    // Check if the target date and time have passed
-    if (now >= targetDate) {
-        // Redirect to a new URL when the target date has passed
-        window.location.href = "/escape/start.html";
-    } else {
-        console.log("Countdown not yet expired")
-    }
-}
-
-// Initial call to check and update content
-updateContent();
