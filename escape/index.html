@@ -9,50 +9,124 @@
 </head>
 <body class="bg-black text-white">
     <div id="main" class="p-4 container mx-auto flex flex-col justify-center items-center">
-        <h1 class="text-6xl text-center">PETCS x Mathematica Escape Room</h1>
+        <nav class="relative container mx-auto mt-5 pl-5 pr-5 rounded-lg">
+            <div class="flex items-center justify-between">
+                <div class="pt-2">
+                    <a href="/"><img src="/images/PETCS_CLEAR.png" class="h-20"alt="PETCS Club"></a>
+                </div>
+
+                <div class="hidden md:flex space-x-6 text-white font-bold">
+                    <a href="/">Home</a>
+                    <a href="/about.html">About</a>
+                    <a href="/team.html">Team</a>
+                    <a href="https://docs.google.com/document/d/1BO7FV7x6stfsH1SgiY1mqDd_PShMs3D99lrHntGP7Dg/edit?usp=sharing" target="_blank">Resources</a>
+                    
+                </div>
+
+                <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+            </div>
+
+            <div class="md:hidden">
+                <div id="menu" class="absolute flex flex-col items-center self-end bg-gray-900 text-white py-8 mt-10 space-y-6 font-bold sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                    <a href="/">Home</a>
+                    <a href="/about.html">About</a>
+                    <a href="/team.html">Team</a>
+                    <a href="https://docs.google.com/document/d/1BO7FV7x6stfsH1SgiY1mqDd_PShMs3D99lrHntGP7Dg/edit?usp=sharing" target="_blank">Resources</a>
+                </div>
+            </div>
+        </nav>
         <br>
-        <div class="flex items-center mb-12">
-            <a href="https://petcs.club"><img src="/images/logo.png" alt="Image 1" class="w-20 h-20"></a>
-            <div class="text-4xl mx-4">X</div>
-            <a href="https://linktr.ee/pethsmath"><img src="/images/math.png" alt="Image 2" class="w-20 h-20"></a>
-        </div>
-        <h2 class="md:mr-32 md:ml-32 text-center text-xl">A collaboration between PETCS club and Mathematica club to host a one hour virtual escape room with computer science and math related puzzles. A fun event with lots of food and cool prizes to be won!</h2>
-        <br>
-        <div class="text-center w-full">
-            <a href="https://forms.gle/GrYMa9Mu8bZmDur66" class="bg-white text-black font-bold w-full px-4 py-2 rounded-lg mt-4 inline-block">Sign Up</a>
+        <div class="hero text-white py-16 px-4 text-center">
+            <div class="max-w-4xl mx-auto flex flex-col items-center">
+                <!-- Big Title -->
+                <h1 class="text-4xl font-bold mb-4">PETCS x MATHEMATICA</h1>
+                
+                <!-- Escape Room Title -->
+                <h2 class="text-2xl font-semibold mb-4">Escape Room</h2>
+    
+                <!-- Logos with 'x' separator -->
+                <div class="flex items-center mb-4">
+                    <a href="https://petcs.club" target="_blank"><img src="../images/logo.png" alt="Logo 1" class="w-20 h-20 mr-2"></a>
+                    <span class="text-2xl font-bold">x</span>
+                    <a href="https://linktr.ee/pethsmath" target="_blank"><img src="../images/math.png" alt="Logo 2" class="w-20 h-20 ml-2"></a>
+                </div>
+            </div>
         </div>
         
         <br>
         <p class="countdown text-4xl md:text-8xl"></p>
         <br>
-        <div class="container mx-auto">
-            <br>
-            <hr>
-            <br>
+        <div class="text-center mt-4">
+            <a href="https://forms.gle/X94LWcR4FKiX5smL9" target="_blank" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-300 ease-in-out">Sign Up</a>
         </div>
-        <h1 class="text-4xl hidden md:block"> <span class="font-bold">When:</span> Wednesday December 13th, 2023 3:00PM - 4:00PM</h1>
-        <h1 class="text-4xl block md:hidden"> <span class="font-bold">When:</span> 2023-12-13 3:00PM - 4:00PM</h1>
         <br>
-        <h1 class="text-4xl"><span class="font-bold">Where:</span> Room 245</h1>
-        <div class="container mx-auto">
-            <br>
-            <hr>
-            <br>
+
+
+        <div class="container mx-auto p-4 flex flex-wrap">
+            <!-- Card 1 - Time/Date -->
+            <div class="w-full md:w-1/2 p-4 mb-4">
+                <div class="bg-gray-900 text-white rounded p-4">
+                    <h2 class="text-xl font-semibold mb-2">Time and Date</h2>
+                    <p>Join us on Wednesday, December 13th 2023 at 3:00PM for an exciting adventure.</p>
+                </div>
+            </div>
+    
+            <!-- Card 2 - Prizes -->
+            <div class="w-full md:w-1/2 p-4 mb-4">
+                <div class="bg-gray-900 text-white rounded p-4">
+                    <h2 class="text-xl font-semibold mb-2">Prizes</h2>
+                    <p>These prizes are not final. Prizes are always being updated so keep checking back often!</p>
+                    <br>
+                    <ul class="list-disc ml-4">
+                        <li><span class="font-bold">🥇 First Place:</span> WolframAlpha Notebook Edition one-year subscription ($87 value) for each team member</li>
+                        <br>
+                        <li><span class="font-bold">🥈 Second Place:</span> WolframAlpha Notebook Edition one-year subscription ($87 value) for each team member</li>
+                        <br>
+                        <li><span class="font-bold">🥉 Third Place:</span> Gift Cards (TBD) for each team member</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Card 3 - Sponsors -->
+            <div class="w-full md:w-1/2 p-4 mb-4">
+                <div class="bg-gray-900 text-white rounded p-4">
+                    <h2 class="text-xl font-semibold mb-2">Sponsors</h2>
+                    <br>
+                    <div class="flex flex-row items-center space-x-2">
+                        <img src="../images/wolfram.png" alt="WolframAlpha" class="w-20 h-20 rounded-lg">
+                        <!--<img src="sponsor2.png" alt="Sponsor 2" class="w-8 h-8">
+                        <img src="sponsor3.png" alt="Sponsor 3" class="w-8 h-8">
+                        <img src="sponsor4.png" alt="Sponsor 4" class="w-8 h-8">-->
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card 4 - About -->
+            <div class="w-full md:w-1/2 p-4 mb-4">
+                <div class="bg-gray-900 text-white rounded p-4">
+                    <h2 class="text-xl font-semibold mb-2">About</h2>
+                    <br>
+                    <ul class="list-disc ml-4">
+                        <li>Join us for a 60 minute virtual escape room where you try to finish first and get amazing prizes!</li>
+                        <br>
+                        <li>Open to anyone and of any skill levels. Anyone can join1</li>
+                        <br>
+                        <li>Please follow the sign up link at the top to indicate which date works best and to express your interest!</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <p class="text-3xl">Bring your friends! Work together in teams of up to three!</p>
-        <br>
-        <p class="text-3xl">For beginners or experts, everyone is welcome! We will have puzzles for all levels!</p>
-        <div class="container mx-auto">
-            <br>
-            <hr>
-            <br>
-        </div>
-        <h1 class="text-4xl"> <span class="font-bold">Prizes:</span> Coming Soon! (Over $500 available in prizes already!)</h1>
-        <br>
-        <h1 class="text-4xl"> <span class="font-bold">Sponsors:</span> Coming Soon!</h1>
-        <h1 class="text-6xl">Questions?</h1>
-        <br>
-        <h1 class="text-4xl">Contact us at <a href="mailto:petcsclub1@gmail.com" class="text-blue-400">petcsclub1@gmail.com</a> or DM us @petcsclub</h1>
+
+        <!-- Question Section -->
+    <div class="text-center mt-4">
+        <p>Have questions? Contact us:</p>
+        <a href="mailto:petcsclub1@gmail.com" class="text-blue-400 hover:underline">Email: petcsclub1@gmail.com</a>
+        <span class="mx-2">or</span>
+        <a href="https://instagram.com/petcsclub" class="text-blue-400 hover:underline">DM Instagram: @petcsclub</a>
     </div>
 
     <script src="../js/countdown.js"></script>
