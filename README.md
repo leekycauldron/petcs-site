@@ -4,5 +4,6 @@
 
 ## Development (scripts)
 
-`build` - build tailwind once
-`watch` - watch tailwind
+`npm install` - install dependencies (run once)
+`npm run build` - build tailwind once
+`npm run watch` - watch tailwind
