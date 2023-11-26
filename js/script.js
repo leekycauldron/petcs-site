@@ -13,7 +13,6 @@ const teamData = [
     {name:"Jonathan Lok", title:"Developer", image:"jonathan"},
     {name:"Evan Ma", title:"Developer", image:"evan"},
     {name:"Sana Pardiwala", title:"Beginner Class - Presenter", image:"sana"},
-    {name:"Dorsa Rohani", title:"Outreach Coordinator", image:"dorsa"},
 ]
 
 function createTeamMemberCards() {
