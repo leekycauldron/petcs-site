@@ -14,7 +14,7 @@ document.getElementById('login-form').addEventListener('submit', async function(
 
         const message = await response.text();
         if (message != 'ERR') {
-            window.location.replace("http://www.w3schools.com");
+            window.location.replace(message);
         } else {
             alert('Invalid username or password.');
         }
