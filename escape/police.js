@@ -13,7 +13,11 @@ document.getElementById('login-form').addEventListener('submit', async function(
         });
 
         const message = await response.text();
-        console.log(message)
+        if (message != 'ERR') {
+            window.location.replace("http://www.w3schools.com");
+        } else {
+            alert('Invalid username or password.');
+        }
     } catch (error) {
         console.error('An error occurred:', error);
         console.log('Error sending request.');
