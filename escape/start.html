@@ -1,37 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Start</title>
-    
+    <title>Puzzle Escape Room</title>
+    <style>
+        body {
+            background-color: black;
+            color: green;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            padding: 50px;
+        }
+        a {
+            color: lime;
+            display: block;
+            margin: 10px;
+            font-size: 20px;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #00ff00;
+        }
+        .difficulty {
+            margin-top: 30px;
+            border-top: 2px solid green;
+            padding-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome</h1>
-    <p>
-    You are a cyber security engineer at the company TruSec. You are tasked with identifying a hacker responsible for a major hack of a local school's student database. They have access over 1000 students usernames and passwords and will leak them in 60 minutes. It is your job to find out who is responsible and turn them in before the passwords get leaked!
-    <br><br>
-    We have narrowed down the origin of the attack coming from the domain petcs.club/escape/____. We are missing the last FOUR digits of the URL, but we managed to recover a hint the hacker uses to remember the link. Can you figure out what the URL is?
-    </p>
-    <br><br>
-    <hr>
-    <h2>Hint:</h2>
-    <p style="text-align: center; margin-right:25%; margin-left: 25%;">
-    In the land of numbers, where we explore,
-A puzzle awaits, let's tally the score.
-We'll start with "5," that's where we begin,
-Step by step, the answers lie within.
-<br><br>
-Add "3" to the count, the first move we make,
-To this growing number, another we'll take.
-"2" we subtract, then multiply by "2,"
-And finally divide by "4," with glee.
-<br><br>
-Now the final number's yours to unveil,
-In binary code, let your answer set sail.
-A positive whole number, from 1 to 8, you'll see,
-Convert it to binary, and decode the mystery.
-</p>
-    
+    <h1>Welcome to the PETCSxMATH Virtual Escape Room</h1>
+    <p>Select a puzzle to begin!</p>
+
+    <div class="difficulty">
+        <h2>Easy Puzzles (1 point)</h2>
+        <a href="link-to-easy-puzzle-1">Easy Puzzle 1</a>
+        <a href="link-to-easy-puzzle-2">Easy Puzzle 2</a>
+        <!-- Add more links as needed -->
+    </div>
+
+    <div class="difficulty">
+        <h2>Medium Puzzles (2 points)</h2>
+        <a href="link-to-medium-puzzle-1">Medium Puzzle 1</a>
+        <a href="link-to-medium-puzzle-2">Medium Puzzle 2</a>
+        <!-- Add more links as needed -->
+    </div>
+
+    <div class="difficulty">
+        <h2>Hard Puzzles (4 points)</h2>
+        <a href="link-to-hard-puzzle-1">Hard Puzzle 1</a>
+        <a href="link-to-hard-puzzle-2">Hard Puzzle 2</a>
+        <!-- Add more links as needed -->
+    </div>
 </body>
 </html>
