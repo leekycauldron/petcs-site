@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Secure Chat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .chat-container {
+            width: 400px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .chat-header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .chat-messages {
+            height: 300px;
+            overflow-y: auto;
+            padding: 10px;
+            background-color: #e9ecef;
+        }
+        .chat-input {
+            padding: 10px;
+            background-color: #f8f9fa;
+            display: flex;
+        }
+        .chat-input input {
+            flex-grow: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-right: 10px;
+        }
+        .chat-input button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+        .chat-input button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            Secure Chat
+        </div>
+        <div class="chat-messages">
+            <p><strong>Jacob:</strong> Hey, got your message. You still looking for the special ingredient?</p>
+            <p><strong>Me:</strong> Yes, I am. Is it available?</p>
+            <p><strong>Jacob:</strong> Yes, I have it. But this stuff is top-grade and hard to come by. You sure you can handle it?</p>
+            <p><strong>Me:</strong> Absolutely. I've dealt with similar products before.</p>
+            <p><strong>Jacob:</strong> Alright. But it won't be cheap.</p>
+            <p><strong>Me:</strong> I understand. Quality comes at a price. When and where can we meet?</p>
+            <p><strong>Jacob:</strong> Let's meet at the old warehouse on 5th Street. Tomorrow night, 10 PM. Don't be late.</p>
+            <p><strong>Me:</strong> Got it. 10 PM at the old warehouse. I'll be there.</p>
+            <p><strong>Jacob:</strong> Remember, bring cash. And after this, I'm destroying this line for security. Don't contact me again.</p>
+        </div>
+        
+        <div class="chat-input">
+            <input type="text" placeholder="Type a message...">
+            <button>Send</button>
+        </div>
+    </div>
+</body>
+</html>
