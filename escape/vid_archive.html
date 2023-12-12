@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Police Archive</title>
+    <link rel="stylesheet" href="vid_archive.css">
+</head>
+<body>
+    <h1>Police Archive: Video Footage</h1>
+    <input type="text" id="searchInput" placeholder="Search video title...">
+    <div id="linksContainer"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const linksContainer = document.getElementById('linksContainer');
+    const searchInput = document.getElementById('searchInput');
+
+    // Generate fake links
+    for (let i = 1; i <= 150; i++) {
+        let link = document.createElement('a');
+        link.href = i === 16 ? 'https://youtu.be/BZAwBXqWAsI' : '#';
+        link.textContent = i === 16 ? '16th Street' : `${i}th Street`;
+        link.target = '_blank';
+        linksContainer.appendChild(link);
+
+        if (i !== 16) {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                alert('Error 404: Page Not Found');
+            });
+        }
+    }
+
+    // Search functionality
+    searchInput.addEventListener('input', () => {
+        let filter = searchInput.value.toUpperCase();
+        let links = linksContainer.getElementsByTagName('a');
+
+        for (let i = 0; i < links.length; i++) {
+            let txtValue = links[i].textContent || links[i].innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                links[i].style.display = "";
+            } else {
+                links[i].style.display = "none";
+            }
+        }
+    });
+});
+    </script>
+</body>
+</html>
