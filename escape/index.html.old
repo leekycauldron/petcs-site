@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../output.css">
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+    <title>PETCS Club - ESCAPE</title>
+</head>
+<body class="bg-black text-white">
+    <div id="main" class="p-4 container mx-auto flex flex-col justify-center items-center">
+        <nav class="relative container mx-auto mt-5 pl-5 pr-5 rounded-lg">
+            <div class="flex items-center justify-between">
+                <div class="pt-2">
+                    <a href="/"><img src="/images/PETCS_CLEAR.png" class="h-20"alt="PETCS Club"></a>
+                </div>
+
+                <div class="hidden md:flex space-x-6 text-white font-bold">
+                    <a href="/">Home</a>
+                    <a href="/about.html">About</a>
+                    <a href="/team.html">Team</a>
+                    <a href="https://docs.google.com/document/d/1BO7FV7x6stfsH1SgiY1mqDd_PShMs3D99lrHntGP7Dg/edit?usp=sharing" target="_blank">Resources</a>
+                    
+                </div>
+
+                <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+            </div>
+
+            <div class="md:hidden">
+                <div id="menu" class="absolute flex flex-col items-center self-end bg-gray-900 text-white py-8 mt-10 space-y-6 font-bold sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                    <a href="/">Home</a>
+                    <a href="/about.html">About</a>
+                    <a href="/team.html">Team</a>
+                    <a href="https://docs.google.com/document/d/1BO7FV7x6stfsH1SgiY1mqDd_PShMs3D99lrHntGP7Dg/edit?usp=sharing" target="_blank">Resources</a>
+                </div>
+            </div>
+        </nav>
+        <br>
+        <div class="hero text-white py-16 px-4 text-center">
+            <div class="max-w-4xl mx-auto flex flex-col items-center">
+                <!-- Big Title -->
+                <h1 class="text-4xl font-bold mb-4">PETCS x MATHEMATICA</h1>
+                
+                <!-- Escape Room Title -->
+                <h2 class="text-2xl font-semibold mb-4">Escape Room</h2>
+    
+                <!-- Logos with 'x' separator -->
+                <div class="flex items-center mb-4">
+                    <a href="https://petcs.club" target="_blank"><img src="../images/logo.png" alt="Logo 1" class="w-20 h-20 mr-2"></a>
+                    <span class="text-2xl font-bold">x</span>
+                    <a href="https://linktr.ee/pethsmath" target="_blank"><img src="../images/math.png" alt="Logo 2" class="w-20 h-20 ml-2"></a>
+                </div>
+            </div>
+        </div>
+        
+        <br>
+        <p class="countdown text-4xl md:text-8xl"></p>
+        <br>
+        <a class="w-full bg-white text-black text-center py-2 rounded-lg" href="https://forms.gle/oaw4QXw1dDW8sDbZ7" target="_blank">Sign Up</a>
+        <br>
+
+
+        <div class="container mx-auto p-4 flex flex-wrap">
+            <!-- Card 1 - Time/Date -->
+            <div class="w-full md:w-1/2 p-4 mb-4">
+                <div class="bg-gray-900 text-white rounded p-4">
+                    <h2 class="text-xl font-semibold mb-2">Time and Date</h2>
+                    <p>Join us on Wednesday, December 13th 2023 at 3:00PM for an exciting adventure.</p>
+                </div>
+            </div>
+    
+            <!-- Card 2 - Prizes -->
+            <div class="w-full md:w-1/2 p-4 mb-4">
+                <div class="bg-gray-900 text-white rounded p-4">
+                    <h2 class="text-xl font-semibold mb-2">Prizes</h2>
+                    <p>** These prizes are not final. Prizes are always being updated so keep checking back often!</p>
+                    <br>
+                    <ul class="list-disc ml-4">
+                        <li><span class="font-bold">🥇 First Place:</span> WolframAlpha Notebook Edition one-year subscription ($87 value) for each team member</li>
+                        <br>
+                        <li><span class="font-bold">🥈 Second Place:</span> WolframAlpha Notebook Edition one-year subscription ($87 value) for each team member</li>
+                        <br>
+                        <li><span class="font-bold">🥉 Third Place:</span> Gift Cards (TBD) for each team member</li>
+                        <br>
+                        <li><span class="font-bold">ALL Participants:</span> Free food/drinks, laptop stickers and a 1 month FREE access to pro tier at echo3d</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Card 3 - Sponsors -->
+            <div class="w-full md:w-1/2 p-4 mb-4">
+                <div class="bg-gray-900 text-white rounded p-4">
+                    <h2 class="text-xl font-semibold mb-2">Sponsors</h2>
+                    <br>
+                    <div class="flex flex-row space-x-6">
+                        <div class="mr-10">
+                        <a href="https://www.wolframalpha.com/" target="_blank"><img src="../images/wolfram.png" alt="WolframAlpha" class="w-20 h-20 rounded-lg"></a>
+                        </div>
+                        <div class="ml-10">
+                        <a href="https://www.echo3d.com/" target="_blank"><img src="../images/echo3d.jpg" alt="Echo3D" class="w-20 h-20 rounded-lg"></a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card 4 - About -->
+            <div class="w-full md:w-1/2 p-4 mb-4">
+                <div class="bg-gray-900 text-white rounded p-4">
+                    <h2 class="text-xl font-semibold mb-2">About</h2>
+                    <br>
+                    <ul class="list-disc ml-4">
+                        <li>Join us for a 60 minute virtual escape room where you try to finish first and get amazing prizes!</li>
+                        <br>
+                        <li>Open to anyone and of any skill levels. Anyone can join1</li>
+                        <br>
+                        <li>Please follow the sign up link at the top to indicate which date works best and to express your interest!</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question Section -->
+    <div class="text-center mt-4">
+        <p>Have questions? Contact us:</p>
+        <a href="mailto:petcsclub1@gmail.com" target="_blank" class="text-blue-400 hover:underline">Email: petcsclub1@gmail.com</a>
+        <span class="mx-2">or</span>
+        <a href="https://instagram.com/petcsclub" target="_blank" class="text-blue-400 hover:underline">DM Instagram: @petcsclub</a>
+    </div>
+
+    <script src="../js/countdown.js"></script>
+    </body>
+</html>
